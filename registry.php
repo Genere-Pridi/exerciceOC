@@ -1,6 +1,7 @@
 <?php
    if($_SERVER['REQUEST_METHOD']=='POST'){
-        include_once('connect.php');
+	   include_once('connect.php');
+	   hello();
         insertData();
    }
     
@@ -25,7 +26,13 @@
             print_r($bdd->errorInfo());
         }
         
+    
     }
+    
+function hello(){
+	print "Salut les amis !";
+    }
+
 
 
 ?>
